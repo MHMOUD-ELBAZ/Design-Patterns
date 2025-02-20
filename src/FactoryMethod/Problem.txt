@@ -1,0 +1,13 @@
+Problem: Payment Gateway Integration
+
+Imagine you are building an e-commerce platform that supports multiple payment gateways (PayPal, Credit Card, etc.).
+Each payment gateway has its own implementation for processing payments.
+The platform needs to support new payment gateways in the future without modifying the existing codebase.
+
+
+Requirements:
+The system should be able to switch between different payment gateways dynamically.
+
+Adding a new payment gateway should not require changes to the existing payment processing logic.
+
+The client code should not be tightly coupled to specific payment gateway implementations.

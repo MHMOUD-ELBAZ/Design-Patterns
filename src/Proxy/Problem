@@ -1,0 +1,7 @@
+Now as you are a shadow man, the Egyptian General Intelligence "والعياذ بالله" gave you a mission to edit a public
+API (lets call it "DataRepository" that allow users to query their saved data) for them
+They told you that API must prevent system overload (too many requests per second).
+
+Solution:
+A Proxy Service will wrap the actual API and monitor the number of requests each user makes and limit them
+with 1 request each 3 minutes.

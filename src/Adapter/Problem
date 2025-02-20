@@ -1,0 +1,8 @@
+Assume that we building some application, in some part of this app we will display the weather status
+and because i don't have sensors over the world, i found an external library that provide such service
+i only pass the location to it and receive the weather status object but there is one problem:
+looks like this is an american library which uses those weird units (fahrenheit, mile per second) and overall our
+program, we use the standard units (celsius, meter per second)
+
+Requirements:
+Develop a way to enable us use this library from several classes in our program and avoid the repeated code to convert the result

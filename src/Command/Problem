@@ -1,0 +1,10 @@
+Let's create simulation for airpods controller app, we can assign a specific functionality to specific number of touches.
+for example
+single touch -> pause the music
+double touch -> volume up
+triple touch -> volume down
+
+Requirements:
+provide an API for controlling the airpods, assume there is an invisible power that will provide you with info like how many touches
+needed for a specific action, and will invoke the appropriate methods when touches are counted.
+

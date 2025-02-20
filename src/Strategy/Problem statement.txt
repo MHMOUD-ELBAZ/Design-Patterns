@@ -1,0 +1,28 @@
+We have a set of game characters, [King, knight, Soldier, Queen], each of them move in  the same manner.
+Each of them can fight and heal but some in different of the others.
+King and knight fight using a sword, Soldier fights using an axe, while queen can't fight.
+King and queen both heal so fast, Knight heals moderately, while Soldier heals slowly.
+
+
+-The problem with inheritance is that not all Game Characters have the same behaviour (eg: King and Soldier in fight behaviour)
+so you can't define the behaviour in the super type and just inherit it.
+
+-The problem with abstraction is that there are some characters have the same behavior (eg: King and Queen in heal behaviour)
+so defining abstract method and implement it in each subtype will lead you to have duplicated code.
+
+
+--Observing the problem leads to: we have multiple classes differ only in their behaviors.
+It's exactly the problem that solved by the strategy design pattern.
+
+
+--Solution
+1- Define Context which is a class uses a strategy to execute a behavior:
+    -In our case the GameCharacter is the context.
+
+2- Define strategy interfaces which define the common methods (behaviours) that all concrete strategy classes must implement:
+    -In our case we have 2 interfaces [FightBehaviour, HealBehaviour].
+
+3- Define concrete strategies to implement the strategy interface with specific behaviors:
+    -For FightBehaviour there are 3 different behaviors: fighting with sword, axe, or can't fight.
+    -For HealBehaviour there are 3 different behaviors: healing fast, moderately, or slowly.
+

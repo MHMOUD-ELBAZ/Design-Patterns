@@ -1,0 +1,6 @@
+Say we are building an application that has a feature for starting a chat between 2 users.
+Some developer brought us a class 'ChatService' that communicates with the DB.
+
+Requirements:
+We need to add some functionalities to this service like encrypting the message before storing it,
+Cashing those messages after encrypting it

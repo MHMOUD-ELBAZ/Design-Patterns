@@ -1,0 +1,19 @@
+Problem statement:
+Suppose we are creating a small football game simulation.
+Since players aren't nicked, we have to design shirts for both players and referees.
+One important condition is that there are no teams with the same color.
+Say it's a poor game so we only have two sets of shirt colors: Dark and Light.
+
+
+Requirements:
+You are supposed to provide a mechanism that enforce the coherence of shirt colors during the match.
+
+
+Solution:
+We have a set of related of objects (shirts) and we need to design an interface for creating two families (Dark, Light) of those related objects.
+It is exactly a formal definition for Abstract factory design pattern.
+
+Product: Shirt
+Concrete products: TeamShirt, RefereeShirt
+Abstract factory: ShirtFactory
+Concrete factories: DarkShirtFactory, LightShirtFactory
